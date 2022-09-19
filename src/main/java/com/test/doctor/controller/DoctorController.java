@@ -30,7 +30,7 @@ public class DoctorController {
 		List<Doctor> doctor=docservice.getAllDoctors();
 		
 		if(doctor.size()<=0)
-			throw new DetailsNotFoundException("Sorry Doctors are not Present in Database.Database is Empty");
+			throw new DetailsNotFoundException("Sorry Doctors are not Present in Database,Database is Empty");
 		return doctor;
 	}
 	
